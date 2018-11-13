@@ -18,8 +18,8 @@ function getUserGrid() {
     if (userGridSize > 0 && userGridSize <= 60){
         let divWidth = document.querySelectorAll('.gridBlock');
         divWidth.forEach((grid) => {
-            grid.style.width = Math.round((500 / (userGridSize)) * 100) / 100 + 'px';
-            grid.style.height = Math.round((500 / (userGridSize)) * 100) / 100 + 'px';                
+            grid.style.width = Math.floor((500 / (userGridSize)) * 10) / 10 + 'px';
+            grid.style.height = Math.floor((500 / (userGridSize)) * 10) / 10 + 'px';       
         });
     }else if (userGridSize == undefined) {
         addDivGrid(25);
