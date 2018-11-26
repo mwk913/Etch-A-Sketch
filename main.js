@@ -26,9 +26,10 @@ function getUserGrid() {
         changeColorEventListener();
     }
     else {
-        alert('Enter a number less than 61');
+        resetGrid();
         addDivGrid(25);
-        changeColorEventListener();
+        changeColorEventListerner();
+        alert('Enter a number less than 61');
     }
   }
 //THIS IS USED TO CHANGE COLOR OF DIV BEING HOVERED
