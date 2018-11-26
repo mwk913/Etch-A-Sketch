@@ -28,7 +28,7 @@ function getUserGrid() {
     else {
         resetGrid();
         addDivGrid(25);
-        changeColorEventListerner();
+        changeColorEventListener();
         alert('Enter a number less than 61');
     }
   }
